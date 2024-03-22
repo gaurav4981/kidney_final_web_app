@@ -97,11 +97,11 @@ def main():
         prediction_proba = model.predict_proba(input_data)[:, 1]
 
         # Display prediction result
-        st.subheader('Prediction:')
+        st.subheader('##Prediction:##')
         if prediction[0] == 0:
-            st.write('The model predicts that the patient has kidney disease.')
+            st.write('##The model predicts that the patient has kidney disease.##')
         else:
-            st.write('The model predicts that the patient does not have kidney disease.')
+            st.write('##The model predicts that the patient does not have kidney disease.##')
 
         # # Display prediction probability
         # st.subheader('Prediction Probability:')
